@@ -19,8 +19,9 @@ app.get("/search", async (req, res) => {
   res.json(response);
 });
 
-app.get("/songs/:id", async (req, res) => {
-  const response = await songs(req.params.id);
+app.get("/songs/:source/:id", async (req, res) => {
+  const { source, id } = req.params;
+  const response = await songs(source, id);
 
   res.send(response);
 });
