@@ -85,3 +85,22 @@ Response:
     }
 }
  ```
+
+## GET /search/[source]/[id]
+
+Example: https://example.com/album/genius/29438
+
+Response:
+ ```json
+ [
+   {
+      "artist": {
+         "name": "Bring Me The Horizon",
+         "image_url": ""
+      },
+      "title": "Can You Feel My Heart",
+      "song_url": "/songs/genius/123828",
+      "lyrics_url": "/lyrics/Bring-Me-The-Horizon/Can-You-Feel-My-Heart"
+   },
+ ]
+ ```
